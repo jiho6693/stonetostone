@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../module/inpage.css">
+    <script src="../module/inpage.js"></script>
+    <style>
+        svg {
+	position: absolute;
+}
+h1 {
+	position: relative;
+}
+h1:before {
+	content: attr(data-text);
+	position: absolute;
+	top:0;
+	left:0;
+	filter: url(#motion-blur);
+	opacity: .5; /* not necessary, just nice to soften the effect :) */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hind:wght@700&display=swap');
+
+body{
+    margin: 0 0 0 0;
+    background-color: rgb(136, 125, 98);
+    font-family: 'Bungee', sans-serif;
+    font-family: 'Hind', sans-serif;
+
+}
+
+        .header{
+            margin:0 0 0 0;
+            font-size: 10vw;
+            text-align: center;
+        }
+  
+        .main_image{
+        text-align: center;   
+    }
+    
+    
+   
+    </style>
+</head>
+<svg>
+	<defs>
+		<filter id="motion-blur">
+		</filter>
+	</defs>
+</svg>
+
+<body>
+    <h1 data-text="Stone to Stone"><div class="header">STONE TO STONE</div></h1>
+   
+    <div class="main_image">
+        <div id="imageContainer"></div>
+    </div>
+
+    <div class="info">
+        <div class="title"> Barteringtruck, Photography, 2018</div>
+        <div class="credit">
+            
+            <br>
+            </div>
+        <div class="description">
+        </div>
+     </div>
+
+   
+
+ 
+    
+    <div class="mark"> 
+        © JI-HO PARK
+    </div>
+    
+    
+    <script>
+
+
+       
+           
+            // 이미지 파일의 범위 (g-10부터 g-22까지)
+        const startImageNumber = 1;
+        const endImageNumber = 4;
+        const imageContainer = document.getElementById('imageContainer');
+
+        // 이미지를 동적으로 생성하여 페이지에 추가
+        for (let i = startImageNumber; i <= endImageNumber; i++) {
+            const img = document.createElement('img');
+            img.src = './Movinghouse/m-' + i + '.jpg'; // 이미지 파일의 경로 예: ./Goodbyeservice/g-10.jpg, ...
+            img.alt = '이미지 g-' + i;
+
+            // 이미지를 이미지 컨테이너에 추가
+            imageContainer.appendChild(img);
+        }
+
+
+//        =
+      </script>
+
+</body>
+</html>

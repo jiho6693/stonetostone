@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="inpage.js"></script>
+  
+</head>
+
+
+<body>
+    <div class="content">
+        <h2 class="text_shadows">STONE TO STONE</h2>
+      </div>
+
+      <div class="description">
+    "Stone to Stone" is a workshop that digitizes stone objects. <br> This workshop encourages participants to explore how to express and record objects in a digital environment using their unique visual language, seamlessly.
+   </div>
+    
+   <div class="main_image">
+        <div id="imageContainer"></div>
+        
+      
+    </div>
+
+
+   
+
+ 
+    
+    <div class="mark"> 
+        © JI-HO PARK
+    </div>
+    
+
+
+</body>
+<script>
+    const startImageNumber = 1;
+        const endImageNumber = 15;
+        const imageContainer = document.getElementById('imageContainer');
+
+        // 이미지를 동적으로 생성하여 페이지에 추가
+        for (let i = startImageNumber; i <= endImageNumber; i++) {
+            const img = document.createElement('img');
+            img.src = './image/s-' + i +'.jpg'; 
+            img.alt = 's-' + i;
+
+            // 이미지를 이미지 컨테이너에 추가
+            imageContainer.appendChild(img);
+        }
+</script>
+</html>
