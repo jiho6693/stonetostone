@@ -23,9 +23,18 @@ body {
 
  
   font-family: 'Bungee', sans-serif;
-
+  -ms-overflow-style: none;
+        overscroll-behavior: none;
+    
+    
+        
+    }
+    
+    ::-webkit-scrollbar {
+    display: none;
+    }
    
-}
+
 
 .content {
   flex-direction: column;
@@ -128,7 +137,7 @@ body {
 }
 
 .description{
-    margin: 3% 10% 0 10%;
+    margin: 3% 8% 0 8%;
     font-size: 2rem;
 }
 
